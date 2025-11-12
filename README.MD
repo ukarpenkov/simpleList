@@ -1,16 +1,43 @@
-# React + Vite
+## React Mini-App Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Build a tiny React app that lists items (e.g., “Projects” or “Tasks”), supports a search filter, shows an item details view via routing, and uses one custom hook for data access (mocked locally). Keep it simple but idiomatic.
 
-Currently, two official plugins are available:
+Core expectations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern React (v18+), Vite.
+- Functional components + hooks.
+- One custom hook (e.g., useProjects()).
+- Basic routing for list → details.
+- A controlled form input for filtering.
+- A11y: at least one aria-\* attribute.
+- A minimal test.
+- Readme with run instructions.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Getting Started
 
-## Expanding the ESLint configuration
+#### 1. Clone the repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/ukarpenkov/simpleList.git
+cd simpleList
+```
+
+#### 2. Install dependencies
+
+```bash
+npm install
+```
+
+#### 3. Run dev server
+
+```bash
+npm run dev
+```
+
+#### 4. Run tests
+
+```bash
+npm run test
+```
